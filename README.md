@@ -11,6 +11,12 @@ The goal is deliberately narrow: understand how a product is used without automa
 > Created and maintained by **Diego Riccardi / [DrikWeb](https://drikweb.com/)**, an independent .NET software development and consulting practice.
 > The project originated from a real product requirement and was extracted into a reusable reference implementation.
 
+## Demo
+
+![Privacy-Friendly Analytics dashboard](docs/images/dashboard.png)
+
+The included dashboard provides a minimal overview of product usage without relying on an external analytics platform.
+
 ## The problem
 
 Client-side applications often keep sensitive or business-specific calculations in the browser, but product teams still need to answer questions such as:
