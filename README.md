@@ -1,5 +1,7 @@
 # Privacy-Friendly Analytics for ASP.NET Core
 
+[![Build and Test](https://github.com/Drik81/privacy-friendly-analytics/actions/workflows/build.yml/badge.svg)](https://github.com/Drik81/privacy-friendly-analytics/actions/workflows/build.yml)
+
 **Self-hosted product telemetry with ASP.NET Core, EF Core, SQL Server and TypeScript — without third-party tracking.**
 
 A small, self-hosted product analytics reference implementation for ASP.NET Core applications.
