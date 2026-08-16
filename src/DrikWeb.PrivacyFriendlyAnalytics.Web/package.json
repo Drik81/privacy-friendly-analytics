@@ -1,0 +1,12 @@
+{
+  "author": "Diego Riccardi / DrikWeb",
+  "homepage": "https://drikweb.com/",
+  "name": "drikweb-privacy-friendly-analytics-demo",
+  "private": true,
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

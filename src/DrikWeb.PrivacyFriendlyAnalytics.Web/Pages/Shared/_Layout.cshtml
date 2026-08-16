@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Privacy-Friendly Analytics</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" asp-page="/Index">drikweb - Privacy-Friendly Analytics</a>
+            <nav>
+                <a asp-page="/Index">Demo</a><a asp-page="/Dashboard">Dashboard</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+    <footer class="container footer">
+        Self-hosted ASP.NET Core telemetry demo.
+        Privacy-Friendly Analytics — an open-source project by
+        <a href="https://drikweb.com/?utm_source=github&utm_medium=referral&utm_campaign=privacy-friendly-analytics"
+           target="_blank"
+           rel="noopener">
+            DrikWeb
+        </a>
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

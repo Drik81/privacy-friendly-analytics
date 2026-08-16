@@ -1,0 +1,58 @@
+@page
+@model DrikWeb.PrivacyFriendlyAnalytics.Web.Pages.DashboardModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<section class="hero compact">
+    <p class="eyebrow">Demo dashboard</p>
+    <h1>Product analytics overview</h1>
+    <p class="lead">This page is intentionally public only for the sample repository.</p>
+</section>
+<div class="metrics">
+    <div class="metric">
+        <span>Total events</span>
+        <strong>@Model.Summary.TotalEvents</strong>
+    </div>
+    <div class="metric">
+        <span>Page sessions</span>
+        <strong>@Model.Summary.SessionCount</strong>
+    </div>
+    <div class="metric">
+        <span>Workflows started</span>
+        <strong>@Model.Summary.WorkflowStartedCount</strong>
+    </div>
+    <div class="metric">
+        <span>Workflows completed</span>
+        <strong>@Model.Summary.WorkflowCompletedCount</strong>
+    </div>
+    <div class="metric">
+        <span>Completion rate</span>
+        <strong>@Model.Summary.CompletionRate%</strong>
+    </div>
+    <div class="metric">
+        <span>Positive feedback</span>
+        <strong>@Model.Summary.PositiveFeedbackRate%</strong>
+    </div>
+</div>
+<section class="card">
+    <h2>Events by type</h2><table>
+    <thead><tr><th>Event</th><th>Count</th></tr></thead>
+    <tbody>
+        @foreach (var item in Model.Summary.EventCounts)
+        {
+            <tr><td><code>@item.EventName</code></td><td>@item.Count</td></tr>
+        }
+    </tbody>
+</table>
+</section>
+<section class="card">
+    <h2>Recent events</h2><table>
+    <thead><tr><th>UTC</th><th>Event</th><th>Session</th><th>Path</th></tr></thead>
+    <tbody>
+        @foreach (var item in Model.Summary.RecentEvents)
+        {
+            <tr><td>@item.OccurredAtUtc.ToString("yyyy-MM-dd HH:mm:ss")</td><td><code>@item.EventName</code></td><td><code>@item.SessionId.ToString()[..8]</code></td><td>@item.PagePath</td></tr>
+        }
+    </tbody>
+</table>
+</section>

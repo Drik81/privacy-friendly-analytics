@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/DrikWeb.PrivacyFriendlyAnalytics.Application/DrikWeb.PrivacyFriendlyAnalytics.Application.csproj" />
+  <Project Path="src/DrikWeb.PrivacyFriendlyAnalytics.Infrastructure/DrikWeb.PrivacyFriendlyAnalytics.Infrastructure.csproj" />
+  <Project Path="src/DrikWeb.PrivacyFriendlyAnalytics.Web/DrikWeb.PrivacyFriendlyAnalytics.Web.csproj" />
+</Solution>

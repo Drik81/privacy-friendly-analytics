@@ -1,0 +1,2 @@
+using Microsoft.AspNetCore.Mvc.RazorPages; using DrikWeb.PrivacyFriendlyAnalytics.Application.Analytics; namespace DrikWeb.PrivacyFriendlyAnalytics.Web.Pages;
+public sealed class DashboardModel(IAnalyticsService analyticsService):PageModel{public AnalyticsDashboardSummary Summary{get;private set;}=new(0,0,0,0,0,0,[],[]);public async Task OnGetAsync(CancellationToken ct){Summary=await analyticsService.GetDashboardSummaryAsync(ct);}}

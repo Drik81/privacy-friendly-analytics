@@ -1,0 +1,41 @@
+@page
+@model DrikWeb.PrivacyFriendlyAnalytics.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Demo";
+}
+<section class="hero">
+    <p class="eyebrow">ASP.NET Core · EF Core · SQL Server · TypeScript</p>
+    <h1>Privacy-friendly product analytics without third-party tracking</h1>
+    <p class="lead">This demo records deliberately selected product events while ignoring the business values entered by the user.</p>
+</section>
+<div class="grid">
+    <section class="card">
+        <h2>Sample workflow</h2>
+        <p>Enter anything below. The value stays in the browser and is never sent to the analytics endpoint.</p>
+        <label for="private-input">Private business input</label>
+        <input id="private-input" type="text" placeholder="Example: customer-specific value" />
+        <div class="actions">
+            <button id="start-workflow" type="button">Start workflow</button>
+            <button id="use-feature" class="secondary" type="button">Use optional feature</button>
+            <button id="complete-workflow" type="button">Complete workflow</button>
+        </div>
+        <div id="workflow-status" class="status" aria-live="polite">No workflow activity yet.</div>
+    </section>
+    <section class="card">
+        <h2>Feedback</h2>
+        <p>Only the selected sentiment is recorded.</p>
+        <div class="actions">
+            <button id="positive-feedback" type="button">Helpful</button>
+            <button id="negative-feedback" class="secondary" type="button">Not helpful</button>
+        </div>
+    </section>
+</div>
+<section class="card privacy-note">
+    <h2>What gets stored</h2>
+    <p>
+        Event name, UTC timestamp, a random page-session identifier, page path, and a small allow-listed set of coarse properties. No value from the text field above is sent or persisted.
+    </p>
+</section>
+@section Scripts {
+    <script type="module" src="~/js/analytics-demo.js" asp-append-version="true"></script>
+}
