@@ -10,7 +10,7 @@ Built with **.NET 10, ASP.NET Core, EF Core, SQL Server and TypeScript**.
 
 The goal is deliberately narrow: understand how a product is used without automatically shipping business inputs or user-entered domain data to a third-party analytics platform.
 
-> Created and maintained by **Diego Riccardi / [DrikWeb](https://drikweb.com/)**, an independent .NET software development and consulting practice.
+> Created and maintained by **Diego Riccardi / [DrikWeb](https://drikweb.com/sviluppatore-dotnet-freelance.html)**, a senior freelance .NET developer and independent software consultant.
 > The project originated from a real product requirement and was extracted into a reusable reference implementation.
 
 ## Demo
@@ -252,9 +252,11 @@ Possible next steps:
 
 ## Author
 
-Created and maintained by **Diego Riccardi / [DrikWeb](https://drikweb.com/)**.
+Created and maintained by **Diego Riccardi**, senior .NET developer and freelance software consultant.
 
-For more .NET architecture, modernization, API and software engineering content, visit [drikweb.com](https://drikweb.com/).
+I work primarily with **C#, ASP.NET Core, .NET Framework, SQL Server, APIs, legacy modernization and enterprise software development**.
+
+For more .NET articles, projects and information about my freelance development work, visit **[DrikWeb](https://drikweb.com/sviluppatore-dotnet-freelance.html)**.
 
 ## License
 
